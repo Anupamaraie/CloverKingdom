@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -43,11 +45,12 @@
 .nav{
     display: flex;
     list-style: none;
+    position: sticky;
 }
 .navbar{
     display: flex;
     padding-top: 10px;
-    position: fixed;
+    position: sticky;
 }
 
 .nav li{
@@ -106,13 +109,17 @@ h3{
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 2% 10%;
 }
 .aboutUs .photo img{
+    height: 150px;
+    width: 150px;
     border: 1px solid white;
     border-radius: 150px;
     padding: 6px 9px;
+}
+.aboutUs-left{
+    flex-direction: row-reverse;
 }
 .aboutUs .info{
     color: #000;
@@ -120,7 +127,25 @@ h3{
     text-align: left;
 }
 
+.aboutUs .info h2{
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .aboutUs .info p{
     text-decoration: none;
-    padding: 0px;;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#about h3{
+    padding-left: 10%;
+}
+#about a{
+    font-size: 25px;
+    text-align: center;
+    padding: 10%;
+}
+#contact{
+    background-color:azure;
+    background: cover;
 }
