@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width", initial-scale="1.0">
+        <title>Anupama</title>
+        <link rel = "stylesheet" href="{% static 'css/index.css' %}">
+        <link rel = "shortcut icon" href="{% static 'images/logo1.png' %}">
+    </head>
+    <body>
+        <nav class ="navbar">
+            <ul class ="nav">
+                {% comment %} <div class ="logo"><img src = {% static 'images/logo1.png' %} alt="Logo"></div> {% endcomment %}
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">AboutMe</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="Search">
+                <input type="text" name="search" id="search">
+                <button class="btn btn-sm">Search</button>
+            </div>
+        </nav>
+        <section class="banner" id="banner">
+            <div class="content">
+                <h2>
+                   WELCOME hehe
+                </h2>
+            </div>
+        </section>
+        
+    </body>
