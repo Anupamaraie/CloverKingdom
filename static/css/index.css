@@ -2,25 +2,105 @@
     margin: 0;
     padding: 0;
 }
-.banner .content h2{
-    color: #000;
-    font-size: 3em;
+.banner .content h4{
+    color:lightgoldenrodyellow;
+    font-size: 35px;
     padding-top: 20%;
     text-align: center;
+    font-family: Georgia;
+}
+.banner .content p{
+    color: lightgoldenrodyellow;
+    font-size: 23px;
+    margin:2px;
+    text-align: center;
+    font-family: Georgia;
+}
+.logo{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.Search{
+    width: 50%;
+    text-align: right;
+    padding-top: 10px;
+}
+#search{
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 250px;
+    font-size: 15px;
 }
 .nav{
     display: flex;
+    list-style: none;
 }
 .navbar{
     display: flex;
-   
+    padding-top: 10px;
+    position: fixed;
 }
-.Search{
-    width: 100%;
-    text-align: center;
+
+.nav li{
+    list-style: none;
+    padding-top: 10px;;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    padding: 18px 29px;
+}
+
+.nav li:hover a{
+    background-color: lightcyan;
+    color: black;
+}
+
+.btn{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 6px  10px;
+    background: none;
+}
+.btn:hover{
+    background-color: lightcyan;
+    color: black;
 }
 .background{
-    background: url("/static/images/bg.jpg");
+    background: url("/static/images/bg1.jpg");
     align-items: center;
     background-size: cover;
+}
+
+.background{
+    height:100vh;
+}
+.banner .content{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.banner .content .btnbtn{
+    width: 100px;
+    padding: 2px 3px;
+    margin: 2px;
+}
+.aboutUs{
+    padding: 21px;
+    text-decoration: underline;
+}
+.aboutUs .photo img{
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 21px 34px;
 }
