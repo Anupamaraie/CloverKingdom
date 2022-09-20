@@ -149,3 +149,17 @@ h3{
     background-color:azure;
     background: cover;
 }
+.contact .form {
+    padding: 2% 30%;
+}
+.contact .form input {
+    padding: 2%;
+    width: 500px;
+    margin: 5px;
+    border: 1px solid darkgray;
+}
+.contact h2 {
+    width: 500px;
+    font-size: 25px;
+    padding-left: 37%;
+}
