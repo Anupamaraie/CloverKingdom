@@ -145,10 +145,42 @@ h3{
     text-align: center;
     padding: 10%;
 }
-
+.footer{
+    display: flex;
+    background: snow;
+}
 .footer .projname{
-    padding: 5%;
+    padding: 2% 10%;
     margin: 10px;
-    font-size: 25px;
+    font-size: 35px;
     font-family: sans-serif;
+}
+.footer .projname p{
+    font-size: 15px;;
+}
+
+.footer .logos{
+    display: flex;
+    padding-left: 350px;;
+}
+.footer .logos a img{
+    margin: 15px;
+    height: 35px;
+    padding-top: 100px;
+}
+.footer .logos h5{
+font-size: 15px;
+padding-top: 28%;
+}
+
+.last{
+    background-color: snow;
+    display: flex;
+    padding: 2% 11%;
+}
+.last img{
+    height:15px;
+}
+.last p{
+    font-size: 14px;;
 }
