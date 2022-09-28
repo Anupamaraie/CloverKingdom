@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <meta name = "viewport" content="width=device-width", initial-scale="1.0">
         <title>Clover Kingdom</title>
-        <link rel = "stylesheet" href="{% static 'css/index.css' %}">
+        <link rel = "stylesheet" type = "text/css" href="{% static 'css/index.css' %}">
+        <link rel="stylesheet" type="text/css" href=" {% static '/css/contact.css' %} ">
         <link rel = "shortcut icon" href="{% static 'images/logo.png' %}">
     </head>
     <body>
@@ -34,7 +35,7 @@
         </section>
     </div>
     <hr>
-    <section class ="About Us" id = "about">
+    <section class ="About" id = "about">
     <h3>Messages from Top Officers</h3>
     <section class="aboutUs">
         <div class ="info">
@@ -76,23 +77,60 @@
         </div>
     </section>
     <a href ="#about" class ="clickme">Explore About Us</a>
+    <br>
+    <br>
+    <br>
 </section>
-<br>
-<br>
-<br>
 <hr>
 <section class ="contact" id="contact">
     <h2>Contact Us For booking Help</h2>
-    <div class="form">
-        <input type = "text" name ="name" id = "name" placeholder="Enter your name"></input>
-        <input type = "text" name ="country" id = "country" placeholder="Enter your country"></input>
-        <input type = "text" name ="help" id = "help"placeholder = "Help needed"></input>
+    <div class = "form">
+        <form action="#contact" method="POST" >
+        <div class = "forms" action = "POST">
+        <h6>Name:</h6>
+        <input type = "text" name ="name" id = "name" placeholder="Enter your name">
+        <h6>Kingdom:</h6>
+        <input type = "text" list="kingd" name ="kingdom" id = "kingdom" placeholder="Enter your country">
+        <datalist id="kingd">
+            <option value="Spade Kingdom"></option>
+            <option value="Clover Kingdom"></option>
+            <option value="Heart Kingdom"></option>
+            <option value="Diamond Kingdom"></option> 
+          </datalist>
+        <h6>Preferred Squad: </h6>
+        <input type = "text" list = "squads" id = "squad" name ="squad"  placeholder="Choose any">
+        <datalist id="squads">
+            <option value="Golden Dawn"></option>
+            <option value="Black Bull"></option>
+            <option value="Silver Eagle"></option>
+            <option value="Blue Rose"></option>
+            <option value="Crimson Lion"></option>
+            <option value="Green Mantis"></option> 
+            <option value="Coral Peacock"></option> 
+            <option value="Purple Orca"></option> 
+            <option value="Aqua Deer"></option>  
+          </datalist>
+        
+        <h6>Reason for contact:</h6>
+        <textarea type = "text" name ="help" id = "help" placeholder = "Help needed" rows="6" cols="50"></textarea>
+        <button class="btn btn-primary" type ="submit" >Submit</button>
+        </form>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
+</div>
     <br>
 </section>
+<hr>
+<section class="footer">
+    <div class = "projname">
+        <h4>CloverKingdom</h4>
+    </div>
+    <div class = "logos">
+        <img src={% static 'images/insta.png' %} alt="CEO">
+        <img src={% static 'images/fb.png' %} alt="CEO">
+        <img src={% static 'images/twt.png' %} alt="CEO">
+        <img src={% static 'images/yt.png' %} alt="CEO">
+    </div>
+</section>
+
     </body>
 </html>

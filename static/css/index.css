@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-style: Georgia;
 }
 .banner .content h4{
     color:lightgoldenrodyellow;
@@ -55,7 +54,8 @@
 
 .nav li{
     list-style: none;
-    padding-top: 10px;;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;;
 }
 
 .nav li a{
@@ -145,21 +145,10 @@ h3{
     text-align: center;
     padding: 10%;
 }
-#contact{
-    background-color:azure;
-    background: cover;
-}
-.contact .form {
-    padding: 2% 30%;
-}
-.contact .form input {
-    padding: 2%;
-    width: 500px;
-    margin: 5px;
-    border: 1px solid darkgray;
-}
-.contact h2 {
-    width: 500px;
+
+.footer .projname{
+    padding: 5%;
+    margin: 10px;
     font-size: 25px;
-    padding-left: 37%;
+    font-family: sans-serif;
 }
