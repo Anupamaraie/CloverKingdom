@@ -10,7 +10,8 @@
     margin-top: 20px;
     margin-left: 250px;
     margin-right: 350px;
-    margin-bottom: 20px;
+    padding-bottom: 1%;
+    margin-bottom: 25px;
     border: 2px solid gray;
     border-radius: 60px;
     background-color:cadetblue;

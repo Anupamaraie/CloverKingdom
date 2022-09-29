@@ -1,19 +1,12 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
 {% load static %}
-<html lang = "en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "viewport" content="width=device-width", initial-scale="1.0">
-        <title>Clover Kingdom</title>
-        <link rel = "stylesheet" type = "text/css" href="{% static 'css/index.css' %}">
-        <link rel="stylesheet" type="text/css" href=" {% static '/css/contact.css' %} ">
-        <link rel = "shortcut icon" href="{% static 'images/logo.png' %}">
-    </head>
-    <body>
+
+{% block body %}
+<section class="banner" id="home">
         <div class ="background">
         <nav class ="navbar">
             <ul class ="nav">
-                <div class ="logo"><img src = {% static 'images/logo.png' %} alt="Logo"></div>
+            <div class ="logo">  <a href="http://127.0.0.1:8000/"> <img src = {% static 'images/logo.png' %} alt="Logo"></a></div>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">AboutUs</a></li>
                 <li><a href="#Services">Services</a></li>
@@ -24,7 +17,6 @@
                 <button type = "button" class="btn btn-sm">Search</button>
             </div>
         </nav>
-        <section class="banner" id="home">
             <div class="content">
                 <h4>
                     Welcome to Clover Kingdom
@@ -86,6 +78,7 @@
     <h2>Contact Us For booking Help</h2>
     <div class = "form">
         <form action="#contact" method="POST" >
+            {% csrf_token %}
         <div class = "forms" action = "POST">
         <h6>Name:</h6>
         <input type = "text" name ="name" id = "name" placeholder="Enter your name">
@@ -114,16 +107,18 @@
         <h6>Reason for contact:</h6>
         <textarea type = "text" name ="help" id = "help" placeholder = "Help needed" rows="6" cols="50"></textarea>
         <button class="btn btn-primary" type ="submit" >Submit</button>
-        </form>
+        {% include 'msg.html' %}
+    </form>
     </div>
 </div>
     <br>
 </section>
+
 <hr>
 <section class="footer">
     <div class = "projname">
         <h4>CloverKingdom</h4>
-        <p>cloverdom12@gmail.com</p>
+        <p>A kingdom of love and magic.</p>
     </div>
     <div class = "logos">
         <h5>JOIN US in:</h5>
@@ -137,5 +132,5 @@
 <img src={% static 'images/cpy.png' %} alt="copyright">
 <p>copyrightClover12</p>
                 </div>
-    </body>
-</html>
+
+{% endblock body %}

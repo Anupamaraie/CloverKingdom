@@ -184,3 +184,12 @@ padding-top: 28%;
 .last p{
     font-size: 14px;;
 }
+
+.alert{
+    background-color: darkseagreen;
+    color: #000;
+    font-size: 17px;
+    font-family: sans-serif;
+    text-align: -webkit-center;
+    padding: 1%;
+}
