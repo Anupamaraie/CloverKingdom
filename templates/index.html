@@ -3,33 +3,38 @@
 
 {% block body %}
 <section class="banner" id="home">
-        <div class ="background">
-        <nav class ="navbar">
-            <ul class ="nav">
+        <nav class ="navbar h-nav">
+            <ul class ="nav v-class">
             <div class ="logo">  <a href="http://127.0.0.1:8000/"> <img src = {% static 'images/logo.png' %} alt="Logo"></a></div>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">AboutUs</a></li>
                 <li><a href="#Services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="Search">
+            <div class="Search v-class">
                 <input type="text" name="search" id="search">
                 <button type = "button" class="btn btn-sm">Search</button>
             </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
-            <div class="content">
+            <div class="content background">
                 <h4>
                     Welcome to Clover Kingdom
                 </h4>
                 <p>Thank you for choosing to visit us. We are more than happy to have you here. <strong>Register Now</strong> to be a part of us.</p>
                 <button type = "button" class="btnbtn" >Register Now</button>
             </div>
+        
         </section>
-    </div>
+    
     <hr>
     <section class ="About" id = "about">
     <h3>Messages from Top Officers</h3>
-    <section class="aboutUs">
+    <section class="aboutUs af-resp">
         <div class ="info">
             <h2>Julius Novachrono - Wizard'sKing</h2>
             <p>Welcome to clover kingdom, minnasan. Our kingdom is really prosperous in terms of humanity and magic and 
@@ -41,7 +46,7 @@
             <img src={% static 'images/king.jpg' %} alt="Julius">
         </div>
     </section>
-    <section class="aboutUs aboutUs-left">
+    <section class="aboutUs aboutUs-left af-resp">
         <div class ="info">
             <h2>Yami Sukehiro - BlackBullsCaptain</h2>
             <p>Yo, I'm not really interested in these kindof things. So, I'll let the brats handle it. 
@@ -55,7 +60,7 @@
             <img src={% static 'images/CEO.jpg' %} alt="yami">
         </div>
     </section>
-    <section class="aboutUs">
+    <section class="aboutUs af-resp">
         <div class ="info">
             <h2>William Vangeance - GoldenDawnCaptain</h2>
             <p>Hello. I am William Vangeance, Captain of Golden Dawn.
@@ -75,8 +80,8 @@
 </section>
 <hr>
 <section class ="contact" id="contact">
-    <h2>Contact Us</h2>
-    <div class = "form">
+    <h2 >Contact Us</h2>
+    <div class = "form cf-resp">
         <form action="#contact" method="POST" >
             {% csrf_token %}
         <div class = "forms" action = "POST">
@@ -116,8 +121,8 @@
 
 <hr>
 <section class="footer">
-    <div class = "projname">
-        <h4>CloverKingdom</h4>
+    <div class = "projname ">
+        <h6>CloverKingdom</h6>
         <p>A kingdom of love and magic.</p>
     </div>
     <div class = "logos">
