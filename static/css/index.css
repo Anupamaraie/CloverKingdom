@@ -7,6 +7,34 @@ html{
     margin: 0;
     padding: 0;
 }
+
+.banner .navbar{
+    display: flex;
+    background-color:cadetblue;
+    padding-top: 10px;
+    position: relative;
+}
+.nav{
+    display: flex;
+    list-style: none;
+}
+.nav li{
+    list-style: none;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+
+.nav li a{
+    text-decoration: none;
+    color:black;
+    padding: 18px 29px;
+}
+
+.nav li:hover a{
+    background-color: lightcyan;
+    color: black;
+}
+
 .banner .content h4{
     color:lightgoldenrodyellow;
     font-size: 35px;
@@ -32,6 +60,7 @@ html{
     border: 1px solid black;
     border-radius: 50px;
 }
+
 .Search{
     width: 50%;
     text-align: right;
@@ -44,33 +73,6 @@ html{
     border-radius: 10px;
     width: 250px;
     font-size: 15px;
-}
-.nav{
-    display: flex;
-    list-style: none;
-}
-.navbar{
-    display: flex;
-    background-color:cadetblue;
-    padding-top: 10px;
-    position: sticky;
-}
-
-.nav li{
-    list-style: none;
-    padding-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;;
-}
-
-.nav li a{
-    text-decoration: none;
-    color:black;
-    padding: 18px 29px;
-}
-
-.nav li:hover a{
-    background-color: lightcyan;
-    color: black;
 }
 
 .btn{

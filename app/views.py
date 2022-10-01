@@ -17,3 +17,6 @@ def home(request):
         messages.success(request,"Submitted!!")
         return redirect('/#contact')
     return render(request,'index.html')
+
+def registration(request):
+    return render(request,'registration.html')
