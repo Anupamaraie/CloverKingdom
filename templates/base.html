@@ -9,8 +9,10 @@
         <link rel = "shortcut icon" href="{% static 'images/logo.png' %}">
     </head>
     <body>
-        <p>okay lets see</p>
-    {% block body %}{% endblock body %}
+    {% block body %}
+    {% block nav %}
+    {% endblock nav %}
+    {% endblock body %}
     <script src="{% static 'js/repo.js' " %}"></script>
     </body>
 </html>

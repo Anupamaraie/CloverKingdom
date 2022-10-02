@@ -20,3 +20,6 @@ def home(request):
 
 def registration(request):
     return render(request,'registration.html')
+
+def home1(request):
+    return render(request,'index.html')
