@@ -1,0 +1,27 @@
+.bodypart{
+    display: flex;
+}
+
+.bodypart .firstsection{
+    padding-top: 10%;
+    padding-left: 10%;
+    font-family: sans-serif;
+}
+.firstsection h4{
+    font-size: 25px;
+}
+.firstsection p{
+    font-size: 15px;
+}
+body{
+    background-color: azure;
+}
+.bodypart .secondsection{
+    padding-left: 20%;
+    padding-top:10%;
+}
+.secondsection input{
+    margin: 5%;
+    padding: 3%;
+    padding-right: 35%
+}
