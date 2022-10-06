@@ -1,27 +1,24 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block body %}
-        <section class="banner">
-        <nav class ="navbar h-nav">
-            <ul class ="nav v-class">
-            <div class ="logo">  <a href="http://127.0.0.1:8000/"> <img src = {% static 'images/logo.png' %} alt="Logo"></a></div>
-                <li><a href="main">Home</a></li>
-                <li><a href="main#about">AboutUs</a></li>
-                <li><a href="main">Services</a></li>
-                <li><a href="main#contact">Contact</a></li>
-            </ul>
-            <div class="Search v-class">
-                <input type="text" name="search" id="search">
-                <button type = "button" class="btn btn-sm">Search</button>
-            </div>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
-        </section>
-        <section>
+<nav class ="navbar h-nav">
+    <ul class ="nav v-class">
+    <div class ="logo">  <a href="http://127.0.0.1:8000/"> <img src = {% static 'images/logo.png' %} alt="Logo"></a></div>
+        <li><a href="main#home">Home</a></li>
+        <li><a href="main#about">AboutUs</a></li>
+        <li><a href="main#Services">Services</a></li>
+        <li><a href="main#contact">Contact</a></li>
+    </ul>
+    <div class="Search v-class">
+        <input type="text" name="search" id="search">
+        <button type = "button" class="btn btn-sm">Search</button>
+    </div>
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</nav>
             <section class="bodypart backgroundre">
                 <div class = "firstsection">
                     <h4>Welcome to Clover kingdom.</h4>
@@ -40,6 +37,7 @@
                     <input type="checkbox" name = "gen" id = "gen">Others</input>
                     <h5>Citizenship Number:</h5>
                     <input type="text" name = "cnumb" id = "cnumb">
+                    <button class="btn btn-primary" type ="submit" >Sign Up</button>
                 </div>
             </section>
 

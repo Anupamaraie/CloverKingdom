@@ -11,9 +11,11 @@
     </head>
     <body>
     {% block body %}
-    {% block nav %}
-    {% endblock nav %}
     {% endblock body %}
+    <footer>
+        <img src={% static 'images/cpy.png' %} alt="copyright">
+        <p>CopyrightClover2022-All rights reserved</p>
+    </footer>
     <script src="{% static 'js/repo.js' " %}"></script>
     </body>
 </html>

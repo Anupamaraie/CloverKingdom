@@ -8,7 +8,7 @@ html{
     padding: 0;
 }
 
-.banner .navbar{
+.navbar{
     display: flex;
     background-color:cadetblue;
     padding-top: 10px;
@@ -235,15 +235,16 @@ font-size: 15px;
 padding-top: 28%;
 }
 
-.last{
+footer{
     background-color: snow;
     display: flex;
-    padding: 2% 11%;
+  padding-top: 2%;
+
 }
-.last img{
+footer img{
     height:15px;
 }
-.last p{
+footer p{
     font-size: 14px;;
 }
 
@@ -293,8 +294,8 @@ padding-top: 28%;
     margin-left: -27px;
     }
     .btn{
-        width: 57%;
-        margin-right: 23%;
+        width: 67%;
+        margin-right: 28%;
     }
     .nav li a{
         padding: 2px 3px;

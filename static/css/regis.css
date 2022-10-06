@@ -19,9 +19,11 @@ body{
 .bodypart .secondsection{
     padding-left: 20%;
     padding-top:10%;
+    padding-right: 20%;
 }
 .secondsection input{
     margin: 5%;
     padding: 3%;
-    padding-right: 35%
+    padding-right: 35%;
+    border-radius: 7px;
 }

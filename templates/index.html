@@ -3,24 +3,24 @@
 
 {% block body %}
 <section class="banner" id="home">
-        <nav class ="navbar h-nav">
-            <ul class ="nav v-class">
-            <div class ="logo">  <a href="http://127.0.0.1:8000/"> <img src = {% static 'images/logo.png' %} alt="Logo"></a></div>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">AboutUs</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="Search v-class">
-                <input type="text" name="search" id="search">
-                <button type = "button" class="btn btn-sm">Search</button>
-            </div>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
+    <nav class ="navbar h-nav">
+        <ul class ="nav v-class">
+        <div class ="logo">  <a href="http://127.0.0.1:8000/"> <img src = {% static 'images/logo.png' %} alt="Logo"></a></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">AboutUs</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="Search v-class">
+            <input type="text" name="search" id="search">
+            <button type = "button" class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
             <div class="content background">
                 <h4>
                     Welcome to Clover Kingdom
@@ -133,9 +133,4 @@
        <a href ="https://www.youtube.com/results?search_query=black+clover" target = "_blank"><img src={% static 'images/yt.png' %} alt="youtube"></a>
     </div>
 </section>
-<div class ="last">
-<img src={% static 'images/cpy.png' %} alt="copyright">
-<p>CopyrightClover2022-All rights reserved</p>
-                </div>
-
 {% endblock body %}
