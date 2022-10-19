@@ -12,6 +12,7 @@ html{
     display: flex;
     background-color:cadetblue;
     padding-top: 10px;
+    width: 100%;
 }
 .nav{
     display: flex;
@@ -87,7 +88,7 @@ html{
 .background{
     background: url("/static/images/bg1.jpg");
     background-size: cover;
-    width: max-content;
+    width: 100%;
 }
 
 .background{
@@ -308,6 +309,10 @@ footer p{
     }
     .v-class{
         opacity: 0;
+    }
+    .background{
+        width: 100%;
+        height:auto;
     }
 
 }

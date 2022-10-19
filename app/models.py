@@ -11,3 +11,14 @@ class Contact(models.Model):
     
     def __str__(self):
         return self.name
+    
+class Regis(models.Model):
+    fname=models.CharField(max_length = 100)
+    lname=models.CharField(max_length=100)
+    dob=models.CharField(max_length=100)
+    gen=models.CharField(max_length=100)
+    cnumb=models.IntegerField()
+
+
+    def __str__(self):
+        return self.fname
